@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap');
+:root{--bg:#fffaf6;--navy:#14213d;--coral:#ef715f;--muted:#4f5b71;--line:#e9e2df}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--navy);font:16px/1.65 'DM Sans',Arial,sans-serif;-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;flex-direction:column}
+a{color:inherit;text-underline-offset:.18em}
+a:focus-visible{outline:3px solid var(--coral);outline-offset:3px}
+.shell{width:min(1120px,calc(100% - 44px));margin:auto}
+.site-header{border-bottom:1px solid var(--line)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;min-height:80px;gap:24px}
+.wordmark{font:400 1.8rem 'DM Serif Display',Georgia,serif;text-decoration:none;white-space:nowrap}
+.period{color:var(--coral)}
+.site-header nav{display:flex;gap:27px;align-items:center;flex-wrap:wrap}
+.site-header nav a{font-size:.87rem;font-weight:700;text-decoration:none}
+.site-header nav a:hover,.site-header nav a[aria-current="page"]{color:#cf5748}
+.site-header nav .header-contact{border-bottom:2px solid var(--coral);padding:4px 0}
+h1,h2,h3{font-family:'DM Serif Display',Georgia,serif;font-weight:400;line-height:1.12;letter-spacing:-.027em}
+.kicker{font-size:.75rem;text-transform:uppercase;letter-spacing:.15em;color:#c25343;font-weight:700}
+main{flex:1}
+.guide{max-width:46rem;width:calc(100% - 44px);margin:0 auto;padding:clamp(2rem,7vw,5rem) 0;line-height:1.7}
+.guide h1{font-size:clamp(2.6rem,6vw,4.6rem);line-height:1.06;margin:.35em 0}
+.guide h2{font-size:clamp(1.7rem,4vw,2.3rem);margin:1.55em 0 .48em}
+.guide p{margin:.65em 0 1em}
+.guide a{text-decoration:underline}
+.guide section{padding:0}
+.guide aside{border-top:1px solid var(--line);margin-top:3rem;padding-top:.1rem}
+.guide .byline{font-size:.92rem;color:var(--muted)}
+.back{margin:0 0 34px!important;font-size:.85rem;font-weight:700}
+.back a{text-decoration:none}
+.back a:hover{color:#c25343}
+.guides-index{width:min(860px,calc(100% - 44px));margin:0 auto;padding:clamp(5rem,11vw,9rem) 0}
+.guides-index h1{font-size:clamp(3.5rem,8vw,5.5rem);margin:.1em 0 .2em}
+.guides-index .intro{font-size:1.1rem;color:var(--muted);max-width:610px}
+.guide-list{border-top:2px solid var(--navy);margin-top:55px}
+.guide-row{display:flex;justify-content:space-between;gap:20px;padding:27px 4px;border-bottom:1px solid var(--line);text-decoration:none}
+.guide-row:hover{background:#fff0e9}
+.guide-row h2{font-size:clamp(1.55rem,3vw,2.15rem);margin:0 0 9px}
+.guide-row p{font-size:.9rem;color:var(--muted);margin:0}
+.guide-row .arrow{font-size:1.5rem;color:var(--coral)}
+footer{border-top:1px solid var(--line);padding:23px 0;color:var(--muted);font-size:.79rem}
+@media(max-width:650px){.header-inner{align-items:flex-start;flex-direction:column;padding:19px 0;gap:12px}.site-header nav{gap:16px 22px}.site-header nav a{font-size:.82rem}.guides-index{padding:70px 0}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
