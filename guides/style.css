@@ -40,3 +40,9 @@ main{flex:1}
 footer{border-top:1px solid var(--line);padding:23px 0;color:var(--muted);font-size:.79rem}
 @media(max-width:650px){.header-inner{align-items:flex-start;flex-direction:column;padding:19px 0;gap:12px}.site-header nav{gap:16px 22px}.site-header nav a{font-size:.82rem}.guides-index{padding:70px 0}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+/* Reader activity suggestions */
+.guide .suggestion-section{border-top:1px solid var(--line);margin-top:3rem;padding-top:.1rem}
+.guide .suggestion-section h2{margin-top:1.2em}
+.tally-embed{width:100%;max-width:100%;margin:1.5rem 0 .25rem}
+.tally-embed iframe{display:block;width:100%;max-width:100%;min-height:240px;border:0;background:transparent}
+.guide .suggestion-fallback{font-size:.82rem;color:var(--muted);margin-top:.65rem}
